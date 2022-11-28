@@ -30,7 +30,7 @@ body {
   background-color: #fafafa;
 }
 
-.player-image {
+.player-image-main {
   width: 400px;
 }
 
@@ -168,6 +168,15 @@ body {
   font-size: 13px;
 }
 /* --- players cards --- */
+.players-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.players-container-title {
+  padding-bottom: 70px;
+}
 
 .player-card {
   background-color: #fafafa;
@@ -190,7 +199,12 @@ body {
   font-size: 16px;
   text-align: justify;
   line-height: 25px;
-  padding: 45px;
+  padding: 40px;
+  text-align: center;
+}
+.avatar-image {
+  position:relative;
+  top: -30px;
 }
 
 /* --- end banner ---*/
