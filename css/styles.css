@@ -86,10 +86,20 @@ body {
   padding: 20px;
 }
 
+.info-banner section {
+  display: flex;
+  flex-direction: column;
+  
+  padding:30px 0px;
+  width: 100%;
+
+}
+
 .info-banner-header h2 {
   font-weight: 700;
   font-size: 36px;
   text-align: start;
+  padding: 30px 0px 50px 0px;
 }
 
 .info-banner-header p {
@@ -97,11 +107,13 @@ body {
   font-size: 16px;
   text-align: start;
   line-height: 24.8px;
+  padding: 10px 0px 20px 0px;
 }
 .info-banner section {
-  background-color: #f5f5f5;
+  
+  padding: 60px 0px;
 }
-.info-banner-tittle-container {
+.info-banner-title-container {
   display: flex;
   justify-content: end;
 }
@@ -132,22 +144,22 @@ body {
 }
 
 .info-banner-article-p {
+  
   text-align: start;
   color: #b3b2b7;
   font-weight: 500;
   font-size: 16.3px;
-  padding-left: 40px;
+  padding: 20px 0px 30px 40px;
   line-height: 26px;
 }
 
 /* --- players section --- */
 
 .players-container {
-  width: 446px;
-  padding: 45px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 446px;
 }
 
 .players-container h2 {
@@ -157,23 +169,13 @@ body {
   color: 242e53;
 }
 
-/* botin pendiente revisar  */
-.player-info-button {
-  width: 134px;
-  height: 44px;
-  background-color: #8b48bf;
-  border-radius: 50px;
-  color: #ffffff;
-  font-weight: 500;
-  font-size: 13px;
-}
 /* --- players cards --- */
-.players-container {
-  display: flex;
+
+.card-container {
+  display:flex;
   flex-direction: column;
   align-items: center;
 }
-
 .players-container-title {
   padding-bottom: 70px;
 }
@@ -184,6 +186,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 35px;
 }
 
 .player-card h4 {
@@ -202,8 +205,21 @@ body {
   padding: 40px;
   text-align: center;
 }
+.player-info-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 134px;
+  height: 44px;
+  background-color: #8b48bf;
+  border-radius: 50px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 13px;
+  margin: 50px 0px;
+}
 .avatar-image {
-  position:relative;
+  position: relative;
   top: -30px;
 }
 
@@ -220,7 +236,6 @@ body {
 }
 
 .end-banner h2 {
- 
   font-weight: 700;
   font-size: 40px;
   line-height: 48px;
@@ -262,7 +277,6 @@ footer {
   font-weight: 500;
   text-transform: capitalize;
   margin-left: 5px;
-  
 }
 
 /* ----- mobile first (480px) ----- */
@@ -273,7 +287,7 @@ footer {
   display: none;
 }
 
-footer-container{
+footer-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -288,38 +302,37 @@ footer-container{
 .footer-text-list {
   display: flex;
   justify-content: space-around;
-
 }
-.footer-ul-group-I, .footer-ul-group-II {
+.footer-ul-group-I,
+.footer-ul-group-II {
   display: flex;
   font-weight: 400;
   font-size: 16px;
   line-height: 23px;
-  color:#ffffff;
+  color: #ffffff;
   text-transform: capitalize;
-  
 }
-.footer-ul-group-I li, .footer-ul-group-II li {
+.footer-ul-group-I li,
+.footer-ul-group-II li {
   padding-bottom: 20px;
 }
-
 
 footer ul {
   list-style: none;
 }
 
 .social-media ul {
-  display:flex;
-  justify-content:space-evenly;
+  display: flex;
+  justify-content: space-evenly;
   padding: 40px 0px;
-
 }
-.footer-logo, .copyright-warning{
+.footer-logo,
+.copyright-warning {
   text-align: center;
   font-weight: 500;
   font-size: 12.5px;
   line-height: 18px;
-  color:#8C8C94;
+  color: #8c8c94;
   text-transform: capitalize;
   padding-bottom: 50px;
 }
