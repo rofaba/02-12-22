@@ -288,7 +288,11 @@ a:link, a:visited, a:active {
 footer {
   background-color: #1e1e26;
 }
-/* -- form -- */
+footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 #update {
   width: 308px;
@@ -308,13 +312,6 @@ footer {
   text-transform: capitalize;
   margin-left: 5px;
   cursor: pointer;
-}
-
-
-footer-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 .footer-subscribe-form {
   width: 100%;
@@ -496,4 +493,20 @@ flex-direction: row;
   background-color: #ffffff;
   color: #8b48bf;
 }
+
+/* --- footer --- */
+
+.footer-container {
+  display:flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  height: 247px;
+}
+.copyright-warning p {
+  width: 214px;
+  display: flex;
+  position: relative;
+  top: 120px; right: -1000px
+}
+
 }
