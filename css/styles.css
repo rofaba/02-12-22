@@ -68,12 +68,14 @@ body {
   color: #ffffff;
   font-weight: 500;
   font-size: 13px;
+  margin: 20px 0px;
 }
 
 /* --- info-banner --- */
 
 .info-banner {
   width: 100%;
+  padding-top: 40px;
 }
 .info-banner-header {
   display: flex;
