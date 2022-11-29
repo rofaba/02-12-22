@@ -348,6 +348,7 @@ footer ul {
   justify-content: space-evenly;
   padding: 40px 0px;
 }
+
 .footer-logo,
 .copyright-warning {
   text-align: center;
@@ -514,13 +515,18 @@ flex-direction: row;
 .footer-social-logo-div {
   display:flex;
   flex-direction: column-reverse;
-  padding: 0;
-  margin: 0;
+  justify-content: flex-start;
+  padding-left: 40px;
+  
 }
 .footer-subscribe-form {
   width: 500px;
-  padding: 70px 0px;
+  padding: 60px 0px;
  
+}
+.footer-text-list {
+  align-self: center;
+  padding-top: 40px;
 }
 
   /* --- footer subscribe input --- */
@@ -530,8 +536,14 @@ flex-direction: row;
 }
 
 .footer-text-list {
-  
   gap: 200px;
   padding-left: 200px;
 }
+.social-media li {
+  padding: 10px;
+}
+.social-media {
+  padding-left: 80px;
+  
+ }
 }
