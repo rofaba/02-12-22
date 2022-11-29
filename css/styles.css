@@ -359,6 +359,16 @@ footer ul {
   text-transform: capitalize;
   padding-bottom: 50px;
 }
+.footer-logo {
+  text-align: center;
+  font-weight: 500;
+  font-size: 12.5px;
+  line-height: 18px;
+  color: #8c8c94;
+  text-transform: capitalize;
+  padding-bottom: 30px;
+}
+
 
 /* ----- mobile first (480px) ----- */
 
@@ -372,7 +382,7 @@ footer ul {
 
 /* body desktop (1440) */
 
-@media (min-width: 768px) {
+@media (min-width: 481px) {
 
 body{
   width: 1440px;
