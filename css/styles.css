@@ -10,7 +10,6 @@
 body {
   width: 480px;
   /* background-color: #fafafa; */
-
 }
 
 /* --- header ----------------------- */
@@ -21,15 +20,13 @@ body {
   padding: 50px;
 }
 .header-logo {
-  padding-right:150px
+  padding-right: 150px;
 }
-
 
 .header-navbar {
   color: #242e52;
   display: flex;
   font-weight: 500;
-  font-size: 13px;
   justify-content: flex-start;
 }
 
@@ -42,7 +39,7 @@ body {
 .header-navbar li {
   color: #242e52;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 500;
   padding: 10px;
 }
@@ -106,6 +103,7 @@ a:active {
 }
 .player-text-button {
   background-color: #8b48bf;
+  border:none;
   border-radius: 50px;
   color: #ffffff;
   cursor: pointer;
@@ -226,7 +224,7 @@ a:active {
 }
 
 .players-container-title {
-  font-size: 39,21px;
+  font-size: 39, 21px;
   font-weight: 700;
   padding-bottom: 70px;
 }
@@ -258,7 +256,8 @@ a:active {
 }
 .player-info-button {
   align-items: center;
-  background-color: rgba(139, 72, 191, 0.7);
+  border:none;
+  background-color: #8b48bf;
   border-radius: 50px;
   color: #ffffff;
   cursor: pointer;
@@ -298,6 +297,7 @@ a:active {
 
 .end-banner button {
   background-color: #232c50;
+  border:none;
   border-radius: 50px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
   color: #ffffff;
@@ -306,6 +306,7 @@ a:active {
   font-weight: 500;
   height: 44px;
   width: 134px;
+
 }
 
 /* --- footer ------------------------------------------------- */
@@ -328,6 +329,7 @@ footer-container {
 
 #update-button {
   background-color: #8b48bf;
+  border:none;
   border-radius: 50px;
   color: #ffffff;
   cursor: pointer;
@@ -335,8 +337,9 @@ footer-container {
   font-weight: 500;
   height: 42px;
   margin-left: 5px;
-  width: 63px;
+  width: 65px;
   text-transform: capitalize;
+  
 }
 
 .footer-subscribe-form {
@@ -378,7 +381,7 @@ footer ul {
 
 .footer-logo,
 .copyright-warning {
-  color: #8C8C94;
+  color: #8c8c94;
   font-size: 12.5px;
   font-weight: 500;
   line-height: 18px;
@@ -396,6 +399,28 @@ footer ul {
   text-align: center;
   text-transform: capitalize;
 }
+
+/* efectos - animaciones */
+
+button, .end-banner-button,
+li {
+  transition: 0.5s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: rgba(139, 72, 191, 0.7);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+li:hover {
+  transform: scale(1.2);
+}
+.end-banner-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+
 
 /* ------------------------------  mobile first (480px) --------------------------- */
 
@@ -430,6 +455,7 @@ footer ul {
   .player-container {
     flex-direction: row;
     justify-content: space-around;
+    padding: 10px 70px
   }
 
   .info-banner-header {
@@ -504,13 +530,12 @@ footer ul {
 
   /* player section */
 
-  #sanyo, #lebron,
+  #sanyo,
+  #lebron,
   #navarro {
     display: flex;
     margin: 0px;
   }
-
-
 
   .players-container {
     align-items: center;
