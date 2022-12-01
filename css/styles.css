@@ -1,17 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Be+Vietnam+Pro", sans-serif, serif;
 }
 
 body {
-  font-family: 'Be+Vietnam+Pro', sans-serif, serif;
   width: 480px;
 }
 
-/* --- header --- */
+/* --- header ----------------------- */
+
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -19,12 +20,13 @@ body {
 }
 
 .header-navbar {
+  color: #242e52;
   display: flex;
-  justify-content: flex-start;
   font-weight: 500;
   font-size: 13px;
-  color: #242e52;
+  justify-content: flex-start;
 }
+
 .header-navbar ul {
   display: flex;
   list-style: none;
@@ -32,11 +34,11 @@ body {
 }
 
 .header-navbar li {
-  font-weight: 500;
-  font-size: 13px;
   color: #242e52;
-  padding: 10px;
   cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 10px;
 }
 
 a:link,
@@ -45,11 +47,12 @@ a:active {
   text-decoration: none;
 }
 
-/* --- player banner --- */
+/* --- player container --------------------------- */
+
 .player-container {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .header-container,
@@ -62,15 +65,16 @@ a:active {
 }
 
 .player-text-title {
-  width: 400px;
-  height: 228px;
   color: #232c50;
   font-style: normal;
   font-weight: 700;
   font-style: 50px;
   text-transform: capitalize;
   text-align: end;
+  height: 228px;
+  width: 400px;
 }
+
 .player-text-title span {
   text-transform: uppercase;
 }
@@ -88,32 +92,33 @@ a:active {
   text-transform: lowercase;
 }
 .player-text-button {
-  width: 134px;
-  height: 44px;
   background-color: #8b48bf;
   border-radius: 50px;
   color: #ffffff;
+  cursor: pointer;
   font-weight: 500;
   font-size: 13px;
+  height: 44px;
   margin: 20px 0px;
-  cursor: pointer;
+  width: 134px;
 }
 
-/* --- info-banner --- */
+/* --- info-banner -------------------------------------- */
 
 .info-banner {
-  width: 100%;
   padding-top: 40px;
+  width: 100%;
 }
+
 .info-banner-header {
-  display: flex;
-  flex-direction: column;
+  align-items: flex-start;
   background-color: #3cddf3;
   color: #ffffff;
-  align-items: flex-start;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   padding: 20px;
+  width: 100%;
 }
 
 .info-banner section {
@@ -131,134 +136,138 @@ a:active {
 }
 
 .info-banner-header p {
-  font-weight: 500;
   font-size: 16px;
+  font-weight: 500;
   text-align: start;
   line-height: 24.8px;
   padding: 10px 0px 20px 0px;
 }
+
 .info-banner section {
   padding: 60px 0px;
 }
+
 .info-banner-title-container {
   display: flex;
   justify-content: end;
 }
 
 .info-banner-titles {
-  display: flex;
   align-items: center;
-  justify-content: flex-start;
   background-color: rgba(139, 72, 191, 0.3);
   border-radius: 50px 0px 0px 50px;
-  width: 446px;
-  height: 43px;
   color: #323851;
+  display: flex;
+  justify-content: flex-start;
+  height: 43px;
   text-align: start;
+  width: 446px;
 }
 
 .info-banner-titles span {
-  display: flex;
+  align-items: center;
   background-color: #8b48bf;
-  color: #ffffff;
   border-radius: 50px 50px 50px 50px;
-  width: 70px;
+  color: #ffffff;
+  display: flex;
+  font-size: 16px;
+  font-weight: 700;
   height: 43px;
   justify-content: center;
-  align-items: center;
-  font-weight: 700;
-  font-size: 16px;
+  width: 70px;
 }
 
 .info-banner-article-p {
-  text-align: start;
   color: #b3b2b7;
-  font-weight: 500;
   font-size: 16.3px;
-  padding: 20px 0px 30px 40px;
+  font-weight: 500;
+  text-align: start;
   line-height: 26px;
+  padding: 20px 0px 30px 40px;
 }
 
-/* --- players section --- */
+/* --- players section ----------------------------------- */
 
 .players-container {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 446px;
 }
 
 .players-container h2 {
+  color: 242e53;
   font-weight: 700;
   font-size: 39px;
   line-height: 61px;
-  color: 242e53;
 }
 
-/* --- players cards --- */
+/* --- players cards ------------------------------------- */
 
 .card-container {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
+
 .players-container-title {
   padding-bottom: 70px;
 }
 
 .player-card {
+  align-items: center;
   background-color: #fafafa;
-  width: 446px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin-left: 35px;
+  width: 446px;
 }
 
 .player-card h4 {
   color: #3f4868;
-  font-weight: 700;
   font-size: 16px;
+  font-weight: 700;
   letter-spacing: -0.01em;
 }
 
 .player-card p {
   color: #b9b9c1;
-  font-weight: 500;
   font-size: 16px;
-  text-align: justify;
+  font-weight: 500;
   line-height: 25px;
   padding: 40px;
+  text-align: justify;
   text-align: center;
 }
 .player-info-button {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  width: 134px;
-  height: 44px;
   background-color: #8b48bf;
   border-radius: 50px;
   color: #ffffff;
-  font-weight: 500;
-  font-size: 13px;
-  margin: 50px 0px;
   cursor: pointer;
+  display: flex;
+  font-size: 13px;
+  font-weight: 500;
+  height: 44px;
+  justify-content: center;
+  margin: 50px 0px;
+  width: 134px;
 }
+
 .avatar-image {
   position: relative;
   top: -30px;
 }
 
-/* --- end banner ---*/
+/* --- end banner ---------------------------------------*/
 
 .end-banner {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
   align-items: center;
   background-color: #3cddf3;
   color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
   padding: 40px 80px;
 }
 
@@ -266,71 +275,74 @@ a:active {
   font-weight: 700;
   font-size: 40px;
   line-height: 48px;
-  text-align: center;
   letter-spacing: -0.005em;
+  text-align: center;
 }
 
 .end-banner button {
-  width: 134px;
-  height: 44px;
   background-color: #232c50;
   border-radius: 50px;
-  color: #ffffff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-  font-weight: 500;
-  font-size: 13.2px;
+  color: #ffffff;
   cursor: pointer;
+  font-size: 13.2px;
+  font-weight: 500;
+  height: 44px;
+  width: 134px;
 }
 
-/* --- footer --- */
+/* --- footer ------------------------------------------------- */
 footer {
   background-color: #1e1e26;
 }
 footer-container {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 #update {
-  width: 308px;
-  height: 44px;
-  border-radius: 50px;
   background-color: #ffffff;
-  padding: 10px;
-}
-#update-button {
-  width: 63px;
-  height: 42px;
-  background-color: #8b48bf;
-  color: #ffffff;
   border-radius: 50px;
+  height: 44px;
+  padding: 10px;
+  width: 308px;
+}
+
+#update-button {
+  background-color: #8b48bf;
+  border-radius: 50px;
+  color: #ffffff;
+  cursor: pointer;
   font-size: 13px;
   font-weight: 500;
-  text-transform: capitalize;
+  height: 42px;
   margin-left: 5px;
-  cursor: pointer;
+  width: 63px;
+  text-transform: capitalize;
 }
+
 .footer-subscribe-form {
-  width: 100%;
   display: flex;
   justify-content: center;
   padding: 40px 0px;
+  width: 100%;
 }
 
 .footer-text-list {
   display: flex;
   justify-content: space-around;
 }
+
 .footer-ul-group-I,
 .footer-ul-group-II {
+  color: #ffffff;
+  cursor: pointer;
   display: flex;
   font-weight: 400;
   font-size: 16px;
   line-height: 23px;
-  color: #ffffff;
   text-transform: capitalize;
-  cursor: pointer;
 }
 .footer-ul-group-I li,
 .footer-ul-group-II li {
@@ -349,25 +361,26 @@ footer ul {
 
 .footer-logo,
 .copyright-warning {
-  text-align: center;
-  font-weight: 500;
-  font-size: 12.5px;
-  line-height: 18px;
   color: #8c8c94;
-  text-transform: capitalize;
+  font-size: 12.5px;
+  font-weight: 500;
+  line-height: 18px;
   padding-bottom: 50px;
-}
-.footer-logo {
   text-align: center;
-  font-weight: 500;
-  font-size: 12.5px;
-  line-height: 18px;
-  color: #8c8c94;
   text-transform: capitalize;
-  padding-bottom: 30px;
 }
 
-/* ----- mobile first (480px) ----- */
+.footer-logo {
+  color: #8c8c94;
+  font-size: 12.5px;
+  font-weight: 500;
+  line-height: 18px;
+  padding-bottom: 30px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+/* ------------------------------  mobile first (480px) --------------------------- */
 
 .header-navbar,
 #desktop-version-p,
@@ -377,63 +390,75 @@ footer ul {
   display: none;
 }
 
-/* body desktop (1440) */
+/* -------------------------------    desktop (1440)   -----------------------------------*/
 
-@media (min-width: 481px) {
+@media (min-width: 480px) {
   body {
     width: 1440px;
   }
+
+  /* header */
+
   .header-navbar {
     display: flex;
     flex-direction: row;
   }
+
   .hamburguer-menu {
     display: none;
   }
+
+  /* player-container */
+
   .player-container {
     flex-direction: row;
     justify-content: space-around;
   }
+
   .info-banner-header {
-    flex-direction: row;
-    justify-content: space-around;
     align-items: center;
-    height: 168px;
     background-color: #8b48bf;
+    flex-direction: row;
+    height: 168px;
+    justify-content: space-around;
   }
 
   .info-banner h2 {
-    width: 450px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 450px;
   }
 
   #mobile-version-h2 {
     display: none;
   }
+
   #mobile-version-p {
     display: none;
   }
+
   #desktop-version-p {
     display: flex;
-    width: 450px;
     font-size: 16px;
     font-weight: 500;
-  }
-  #desktop-version-h2 {
-    display: flex;
     width: 450px;
-    font-size: 36px;
-    font-weight: 700;
   }
 
-  /* --- info section --- */
+  #desktop-version-h2 {
+    display: flex;
+    font-size: 36px;
+    font-weight: 700;
+    width: 450px;
+  }
+
+  /* info section  */
 
   .info-banner-title-container,
   .info-banner-article-p {
     width: 480px;
   }
+
   .info-banner-titles {
     background-color: #fafafa;
     position: relative;
@@ -442,18 +467,21 @@ footer ul {
   .info-banner-titles span {
     margin-right: 10px;
   }
+
   .info-banner section {
     background-color: #fafafa;
-    width: 1440px;
     flex-direction: row;
-    justify-content: space-around;
     flex-wrap: wrap;
     gap: 80px;
+    justify-content: space-around;
+    width: 1440px;
   }
+
   .info-banner-article-p {
     padding: 5px 0px 0px 30px;
   }
-  /* --- players section --- */
+
+  /* player section */
 
   #sanyo,
   #navarro {
@@ -461,9 +489,9 @@ footer ul {
   }
 
   .players-container {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 100px 0px 100px 0px;
     width: 100%;
   }
@@ -474,28 +502,34 @@ footer ul {
     flex-wrap: nowrap;
     justify-content: center;
   }
+
   .player-card {
-    width: 445px;
     height: 219px;
+    width: 445px;
   }
 
   .player-card p {
     padding-top: 20px;
   }
 
+  /* end banner */
+
   .end-banner {
-    width: 100%;
-    height: 224px;
-    flex-direction: row;
-    justify-content: space-between;
     background-color: #8b48bf;
+    flex-direction: row;
+    height: 224px;
+    justify-content: space-between;
+    width: 100%;
   }
+
   .end-banner br {
     display: none;
   }
+
   .end-banner h2 {
     width: 500px;
   }
+
   .end-banner button {
     background-color: #ffffff;
     color: #8b48bf;
@@ -505,36 +539,40 @@ footer ul {
   /* --- footer --- */
 
   .footer-container {
+    align-items: initial;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-evenly;
-    align-items: initial;
-    width: 100%;
     height: 247px;
+    justify-content: space-evenly;
+    width: 100%;
   }
+
   .copyright-warning {
-    width: 214px;
     display: flex;
+    left: 1050px;
     position: absolute;
     top: 2280px;
-    left: 1050px;
+    width: 214px;
   }
+
   .footer-social-logo-div {
     display: flex;
     flex-direction: column-reverse;
     justify-content: flex-start;
     padding-left: 40px;
   }
+
   .footer-subscribe-form {
-    width: 500px;
     padding: 60px 0px;
+    width: 500px;
   }
+
   .footer-text-list {
     align-self: center;
     padding-top: 40px;
   }
 
-  /* --- footer subscribe input --- */
+  /* footer subscribe input */
 
   #update {
     width: 200px;
@@ -544,9 +582,11 @@ footer ul {
     gap: 200px;
     padding-left: 200px;
   }
+
   .social-media li {
     padding: 10px;
   }
+
   .social-media {
     padding-left: 80px;
   }
