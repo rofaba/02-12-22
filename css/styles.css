@@ -415,6 +415,7 @@ button:hover {
 }
 li:hover {
   transform: scale(1.2);
+  opacity: 0.6;
 }
 .end-banner-button:hover {
   transform: scale(1.1);
