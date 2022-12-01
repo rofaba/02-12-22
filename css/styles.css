@@ -9,15 +9,21 @@
 
 body {
   width: 480px;
+  /* background-color: #fafafa; */
+
 }
 
 /* --- header ----------------------- */
 
 .header-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 50px;
 }
+.header-logo {
+  padding-right:150px
+}
+
 
 .header-navbar {
   color: #242e52;
@@ -53,14 +59,11 @@ a:active {
   align-items: center;
   display: flex;
   flex-direction: column;
-}
-
-.header-container,
-.player-container {
-  background-color: #fafafa;
+  justify-content: space-between;
 }
 
 .player-image-main {
+  padding-bottom: 40px;
   width: 400px;
 }
 
@@ -69,14 +72,18 @@ a:active {
   font-style: normal;
   font-weight: 700;
   font-style: 50px;
+  padding-top: 40px;
   text-transform: capitalize;
   text-align: end;
-  height: 228px;
   width: 400px;
 }
 
-.player-text-title span {
+.player-text-title #upercase {
   text-transform: uppercase;
+}
+
+.player-text-title span {
+  text-transform: lowercase;
 }
 
 .player-text-subtext {
@@ -85,11 +92,17 @@ a:active {
   font-weight: 500;
   font-style: 16.56px;
   line-height: 26px;
+  padding-top: 20px;
   text-transform: capitalize;
   text-align: end;
 }
+
 #subtext-second-line {
+  color: #000000;
+  font-weight: 500;
+  font-style: 16.56px;
   text-transform: lowercase;
+  padding-bottom: 20px;
 }
 .player-text-button {
   background-color: #8b48bf;
@@ -99,7 +112,6 @@ a:active {
   font-weight: 500;
   font-size: 13px;
   height: 44px;
-  margin: 20px 0px;
   width: 134px;
 }
 
@@ -158,9 +170,11 @@ a:active {
   border-radius: 50px 0px 0px 50px;
   color: #323851;
   display: flex;
+  font-weight: 700;
+  font-size: 16px;
   justify-content: flex-start;
   height: 43px;
-  text-align: start;
+  text-align: center;
   width: 446px;
 }
 
@@ -173,6 +187,7 @@ a:active {
   font-size: 16px;
   font-weight: 700;
   height: 43px;
+  margin-right: 20px;
   justify-content: center;
   width: 70px;
 }
@@ -182,8 +197,8 @@ a:active {
   font-size: 16.3px;
   font-weight: 500;
   text-align: start;
-  line-height: 26px;
-  padding: 20px 0px 30px 40px;
+  line-height: 23px;
+  padding: 20px 10px 30px 45px;
 }
 
 /* --- players section ----------------------------------- */
@@ -211,6 +226,8 @@ a:active {
 }
 
 .players-container-title {
+  font-size: 39,21px;
+  font-weight: 700;
   padding-bottom: 70px;
 }
 
@@ -235,13 +252,13 @@ a:active {
   font-size: 16px;
   font-weight: 500;
   line-height: 25px;
-  padding: 40px;
-  text-align: justify;
+  padding: 20px 5px;
   text-align: center;
+  width: 403px;
 }
 .player-info-button {
   align-items: center;
-  background-color: #8b48bf;
+  background-color: rgba(139, 72, 191, 0.7);
   border-radius: 50px;
   color: #ffffff;
   cursor: pointer;
@@ -325,7 +342,7 @@ footer-container {
 .footer-subscribe-form {
   display: flex;
   justify-content: center;
-  padding: 40px 0px;
+  padding: 50px 0px;
   width: 100%;
 }
 
@@ -339,14 +356,14 @@ footer-container {
   color: #ffffff;
   cursor: pointer;
   display: flex;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 23px;
   text-transform: capitalize;
 }
 .footer-ul-group-I li,
 .footer-ul-group-II li {
-  padding-bottom: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  padding-bottom: 15px;
 }
 
 footer ul {
@@ -361,7 +378,7 @@ footer ul {
 
 .footer-logo,
 .copyright-warning {
-  color: #8c8c94;
+  color: #8C8C94;
   font-size: 12.5px;
   font-weight: 500;
   line-height: 18px;
@@ -430,6 +447,9 @@ footer ul {
     width: 450px;
   }
 
+  .info-banner section {
+    padding: 40px 120px;
+  }
   #mobile-version-h2 {
     display: none;
   }
@@ -465,7 +485,7 @@ footer ul {
     left: -85px;
   }
   .info-banner-titles span {
-    margin-right: 10px;
+    margin-right: 20px;
   }
 
   .info-banner section {
@@ -479,14 +499,18 @@ footer ul {
 
   .info-banner-article-p {
     padding: 5px 0px 0px 30px;
+    margin-left: 10px;
   }
 
   /* player section */
 
-  #sanyo,
+  #sanyo, #lebron,
   #navarro {
     display: flex;
+    margin: 0px;
   }
+
+
 
   .players-container {
     align-items: center;
@@ -509,7 +533,7 @@ footer ul {
   }
 
   .player-card p {
-    padding-top: 20px;
+    padding: 20px 20px 20px 20px;
   }
 
   /* end banner */
@@ -549,7 +573,7 @@ footer ul {
 
   .copyright-warning {
     display: flex;
-    left: 1050px;
+    left: 1100px;
     position: absolute;
     top: 2280px;
     width: 214px;
@@ -584,10 +608,10 @@ footer ul {
   }
 
   .social-media li {
-    padding: 10px;
+    padding: 8px;
   }
 
   .social-media {
-    padding-left: 80px;
+    padding-left: 70px;
   }
 }
