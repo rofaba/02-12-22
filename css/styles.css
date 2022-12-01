@@ -52,6 +52,7 @@ a:active {
 
 /* --- player container --------------------------- */
 
+
 .player-container {
   align-items: center;
   display: flex;
@@ -420,7 +421,7 @@ li:hover {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);
 }
 
-
+.img-container:hover {filter: saturate(180%);}
 
 /* ------------------------------  mobile first (480px) --------------------------- */
 
