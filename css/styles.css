@@ -9,7 +9,6 @@
 
 body {
   width: 480px;
-  /* background-color: #fafafa; */
 }
 
 /* --- header ----------------------- */
@@ -19,6 +18,7 @@ body {
   justify-content: space-around;
   padding: 50px;
 }
+
 .header-logo {
   padding-right: 150px;
 }
@@ -45,7 +45,7 @@ body {
 }
 
 .hamburguer-menu {
-  cursor:pointer;
+  cursor: pointer;
 }
 
 a:link,
@@ -55,7 +55,6 @@ a:active {
 }
 
 /* --- player container --------------------------- */
-
 
 .player-container {
   align-items: center;
@@ -92,7 +91,7 @@ a:active {
   color: #000000;
   font-style: normal;
   font-weight: 500;
-  font-style: 16.56px;
+  font-size: 16.56px;
   line-height: 26px;
   padding-top: 20px;
   text-transform: capitalize;
@@ -102,13 +101,13 @@ a:active {
 #subtext-second-line {
   color: #000000;
   font-weight: 500;
-  font-style: 16.56px;
+  font-size: 16.56px;
   text-transform: lowercase;
   padding-bottom: 20px;
 }
 .player-text-button {
   background-color: #8b48bf;
-  border:none;
+  border: none;
   border-radius: 50px;
   color: #ffffff;
   cursor: pointer;
@@ -261,7 +260,7 @@ a:active {
 }
 .player-info-button {
   align-items: center;
-  border:none;
+  border: none;
   background-color: #8b48bf;
   border-radius: 50px;
   color: #ffffff;
@@ -302,7 +301,7 @@ a:active {
 
 .end-banner button {
   background-color: #232c50;
-  border:none;
+  border: none;
   border-radius: 50px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
   color: #ffffff;
@@ -311,7 +310,6 @@ a:active {
   font-weight: 500;
   height: 44px;
   width: 134px;
-
 }
 
 /* --- footer ------------------------------------------------- */
@@ -334,7 +332,7 @@ footer-container {
 
 #update-button {
   background-color: #8b48bf;
-  border:none;
+  border: none;
   border-radius: 50px;
   color: #ffffff;
   cursor: pointer;
@@ -344,7 +342,6 @@ footer-container {
   margin-left: 5px;
   width: 65px;
   text-transform: capitalize;
-  
 }
 
 .footer-subscribe-form {
@@ -407,11 +404,11 @@ footer ul {
 
 /* efectos - animaciones */
 
-button, .end-banner-button,
+button,
+.end-banner-button,
 li {
   transition: 0.5s;
 }
-
 button:hover {
   transform: scale(1.1);
   background-color: rgba(139, 72, 191, 0.7);
@@ -425,8 +422,9 @@ li:hover {
   transform: scale(1.1);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);
 }
-
-.img-container:hover {filter: saturate(180%);}
+.img-container:hover {
+  filter: saturate(180%);
+}
 
 /* ------------------------------  mobile first (480px) --------------------------- */
 
@@ -461,7 +459,7 @@ li:hover {
   .player-container {
     flex-direction: row;
     justify-content: space-around;
-    padding: 10px 70px
+    padding: 10px 70px;
   }
 
   .info-banner-header {
